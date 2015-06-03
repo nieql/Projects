@@ -86,4 +86,11 @@ bool delete(PList, void *, int(*compre)(void *pa, void *pb), int (*pfind)(PList 
 */
 bool deletes(PList, void *, int(*compre)(void *pa, void *pb));
 
+/*
+	销毁数组
+	pdst 目标
+*/
+void destroylist(PList  pdst);
+
+
 #endif  

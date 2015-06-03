@@ -309,3 +309,21 @@ bool deletes(PList pdst, void *pel, int(*compre)(void *pa, void *pb))
 	} 
 	return true;
 }
+
+/*
+	销毁数组
+	pdst 目标
+*/
+void destroylist(PList  pdst)
+{
+	if (NULL == pdst)
+	{
+		printf("结构体为空");
+		return;
+	}
+	else
+	{
+		free(pdst->buffer);
+		pdst->buffer = NULL;
+	}
+}
