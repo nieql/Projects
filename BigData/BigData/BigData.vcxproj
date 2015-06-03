@@ -69,6 +69,8 @@
     <ClInclude Include="qq.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="file.c" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="qq.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
