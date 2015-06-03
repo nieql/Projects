@@ -12,5 +12,5 @@ typedef struct QQ
 
 void initQQ(PQQ* pqq, char *qq, char *name, int age, int sex, int auth,char *group);
 
-void * str2obj(char *line);
-char* obj2str(void *pobj);
+void *str2obj(char *line);
+char *obj2str(void *pobj);

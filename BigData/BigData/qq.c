@@ -1,3 +1,5 @@
+
+#define _CRT_SECURE_NO_WARNINGS
 #include "qq.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,6 +7,10 @@
 
 void initQQ(PQQ* pqq, char *qq, char *name, int age, int sex, int auth, char *group)
 {
+	if (NULL == pqq)
+	{
+		return;
+	}
 	*pqq = (PQQ)malloc(sizeof(QQ));
 	if (NULL != qq)
 	{

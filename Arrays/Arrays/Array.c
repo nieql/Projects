@@ -318,12 +318,8 @@ void destroylist(PList  pdst)
 {
 	if (NULL == pdst)
 	{
-		printf("结构体为空");
 		return;
 	}
-	else
-	{
-		free(pdst->buffer);
-		pdst->buffer = NULL;
-	}
+	free(pdst->buffer);
+	pdst->buffer = NULL;
 }
