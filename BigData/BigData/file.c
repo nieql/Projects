@@ -224,18 +224,3 @@ void MergeFile(char * path1, char *path2,char *path3)
 			fclose(pfw);
 		}
 }
-
-
-void main()
-{
-
-	char * path = "E:\\上课视频\\学习资料\\data\\QQ.txt";
-	char *newPath = "E:\\上课视频\\学习资料\\data\\QQNext.txt";
-
-		split(path, newPath, str2obj,obj2str,sizeof(QQ),compre);
-
-
-		system("pause");
-
-
-}
